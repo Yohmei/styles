@@ -1,0 +1,10 @@
+// Base styles
+@import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins', 'abstracts/media';
+@import 'base/fonts', 'base/base';
+
+// Component styles
+@import 'components/layout', 'components/buttons', 'components/forms', 'components/nav', 'components/spinner';
+
+// Page styles
+@import 'pages/Home.scss', 'pages/NotFound.scss', 'pages/Dashboard/Dashboard.scss',
+  'pages/Dashboard/DictionaryStory.scss', 'pages/Dashboard/DrawAgain.scss', 'pages/Dashboard/Freewrite.scss';
