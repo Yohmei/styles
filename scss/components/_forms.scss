@@ -42,18 +42,18 @@ input[type='search']::-webkit-search-results-decoration {
 input:not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']),
 textarea,
 select {
-  border-top: 2px solid transparent;
+  font-family: $sans_font;
+  border-top: 2px solid $font;
   border-left: 2px solid $font;
   border-right: 2px solid $font;
-  border-bottom: 2px solid transparent;
+  border-bottom: 2px solid $font;
   background: transparent;
   color: $font;
-  border-radius: 3px;
+  border-radius: 10px;
   margin: 7px 0;
-  height: 45px;
+  height: 2em;
   padding: 0 10px;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: $def_font_size;
   cursor: text;
   user-select: text;
   -webkit-touch-callout: text;
@@ -80,7 +80,7 @@ input[type='radio'] {
 
 input[type='checkbox']:checked,
 input[type='radio']:checked {
-  background: #367bf0;
+  background: $active;
 }
 
 label:hover > input[type='checkbox']:checked,
@@ -90,7 +90,7 @@ label:hover > input[type='radio']:checked {
 
 label:hover > input[type='checkbox']:not(:checked),
 label:hover > input[type='radio']:not(:checked) {
-  background: #b8174c;
+  background: $hover;
 }
 
 input[type='checkbox'] {
@@ -145,13 +145,13 @@ label.checktext input:checked + span {
   font-size: 2.5em;
   margin: -0.25em 0.255em 0;
   transform: translateY(0.12em);
-  border-color: #367bf0;
+  border-color: $active;
 }
 
 select {
   cursor: pointer;
   padding-right: 40px;
-  text-align-last: center;
+  text-align-last: left;
   background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOSIgaGVpZ2h0PSIxOSIgeD0iMCIgeT0iMCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTkgMTkiIHhtbDpzcGFjZT0icHJlc2VydmUiPgogPGcgdHJhbnNmb3JtPSJtYXRyaXgoMC4wMzM5MjgzNiwwLDAsMC4wMzM5MjgzNiwtNi43ODU2NTUyLDEuNjk2NzE2M2UtNSkiPgogIDxwYXRoIGQ9Ik0gNDgwLDM0NC4xODEgMjY4Ljg2OSwxMzEuODg5IGMgLTE1Ljc1NiwtMTUuODU5IC00MS4zLC0xNS44NTkgLTU3LjA1NCwwIC0xNS43NTQsMTUuODU3IC0xNS43NTQsNDEuNTcgMCw1Ny40MzEgbCAyMzcuNjMyLDIzOC45MzcgYyA4LjM5NSw4LjQ1MSAxOS41NjIsMTIuMjU0IDMwLjU1MywxMS42OTggMTAuOTkzLDAuNTU2IDIyLjE1OSwtMy4yNDcgMzAuNTU1LC0xMS42OTggTCA3NDguMTg2LDE4OS4zMiBjIDE1Ljc1NiwtMTUuODYgMTUuNzU2LC00MS41NzEgMCwtNTcuNDMxIC0xNS43NTYsLTE1Ljg2IC00MS4yOTksLTE1Ljg1OSAtNTcuMDUxLDAgeiIvPgogPC9nPgo8L3N2Zz4K)
     no-repeat right 10px center #fff;
 }

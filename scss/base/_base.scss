@@ -3,7 +3,7 @@
  * ------------------------------------------------------------------- */
 html,
 body {
-  height: 100vh;
+  height: 100%;
 }
 
 html {
@@ -32,18 +32,13 @@ html {
 
 body {
   font-family: $sans_font;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: $def_font_size;
   color: $font;
   background-color: $bg;
   word-wrap: break-word;
   text-rendering: optimizeLegibility;
   padding: 20px;
   margin: 0;
-
-  @include media('<ipad') {
-    font-size: 16px;
-  }
 }
 
 section,
@@ -60,13 +55,13 @@ article,
  * ------------------------------------------------------------------- */
 ::-moz-selection {
   color: $bg;
-  background: $focus;
+  background: $font;
   text-shadow: none;
 }
 
 ::selection {
   color: $bg;
-  background: $focus;
+  background: $font;
   text-shadow: none;
 }
 
@@ -147,6 +142,7 @@ h2,
 h3,
 h4 {
   margin-bottom: 1.8rem;
+  font-family: $h_font;
 }
 
 h1 {
@@ -203,7 +199,6 @@ small {
 }
 
 p {
-  font-weight: bold;
   margin-bottom: 16px;
 }
 
@@ -240,7 +235,6 @@ a img {
 
 a:link,
 a:visited,
-a:active,
 a {
   color: $font;
   font-family: $sans_font;
@@ -251,21 +245,18 @@ a {
   transition: 0.07s ease-in-out;
 
   &:hover {
-    color: $focus;
+    color: $hover;
+  }
+
+  &:active {
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+    color: $font;
   }
 }
 
 a * {
   cursor: pointer !important;
-}
-
-.paper {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  padding: 10px 20px;
-  background-color: #fff;
-  margin-top: 20px;
-  min-height: 100px;
-  color: #000;
 }
 
 .selectable,
@@ -279,15 +270,22 @@ a * {
   -ms-user-select: text;
 }
 
+.elegant,
+.elegant * {
+  font-family: $serif_font;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
 /* -------------------------------------------------------------------
  * ## lines
  * ------------------------------------------------------------------- */
 hr {
-  width: 50%;
-  border: 3px solid #5c616c;
-  background-color: #5c616c;
+  width: 80%;
+  border: 1px solid $hr;
+  background-color: $hr;
   border-radius: 4px;
-  margin: 2.4rem auto 1.5rem;
+  margin: 0 auto 24px;
 }
 
 /* -------------------------------------------------------------------
@@ -304,7 +302,7 @@ code {
  * ------------------------------------------------------------------- */
 /* width */
 ::-webkit-scrollbar {
-  width: 0;
+  width: 2px;
 }
 
 /* Track */

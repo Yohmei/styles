@@ -17,7 +17,3 @@
 @function svg($name, $base: $base-url) {
   @return static($base, 'svg/', $name);
 }
-
-@function absToCenter($measurement: unset) {
-  @return calc(100% / 2 - #{$measurement} / 2);
-}

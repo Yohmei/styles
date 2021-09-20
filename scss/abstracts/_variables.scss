@@ -1,18 +1,21 @@
 /* -------------------------------------------------------------------
  * ## colours
  * ------------------------------------------------------------------- */
-$bg: #1a1616;
-$font: #f6f7eb;
-$link: #e94f37;
-$focus: #fffc31;
+$bg: #fff;
+$font: #000;
+$hover: #fe938c;
+$active: #44ccff;
+$deactive: #a30b37;
+$hr: #f1dede;
 
 /* -------------------------------------------------------------------
  * ## fonts
  * ------------------------------------------------------------------- */
-$sans_font: 'Geomanist', sans-serif;
-$serif_font: 'Aleo', serif;
-$h_font: 'Alata', sans-serif;
+$sans_font: 'DM Sans', sans-serif;
+$serif_font: 'Cormorant Garamond', serif;
+$h_font: 'Criteria', sans-serif;
 $code: 'Share Tech Mono', monospace;
+$def_font_size: 16px;
 
 /* -------------------------------------------------------------------
  * ## container's max width

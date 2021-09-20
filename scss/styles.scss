@@ -1,10 +1,17 @@
 // Base styles
-@import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins', 'abstracts/media';
-@import 'base/fonts', 'base/base';
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/media';
+@import 'base/fonts';
+@import 'base/base';
+@import 'base/helpers';
 
 // Component styles
-@import 'components/layout', 'components/buttons', 'components/forms', 'components/nav', 'components/spinner';
+@import 'components/layout';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/nav';
 
 // Page styles
-@import 'pages/Home.scss', 'pages/NotFound.scss', 'pages/Dashboard/Dashboard.scss',
-  'pages/Dashboard/DictionaryStory.scss', 'pages/Dashboard/DrawAgain.scss', 'pages/Dashboard/Freewrite.scss';
+@import 'pages/NotFound.scss';
